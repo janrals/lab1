@@ -23,6 +23,7 @@ void setHeight(int h)
     protected:
     int width;
     int height;
+    int radius;
 
 
 };
@@ -47,6 +48,15 @@ public:
     }
 };
 
+class Circle: public Shape
+{
+public:
+
+    int getArea()
+    {
+        return (3.14 * radius * radius);
+    }
+};
 int main(void)
 {
 
@@ -61,6 +71,8 @@ int main(void)
 
 
     cout << "Total area of shapes: " << Tri.getArea() + Circle.getArea() + Rec.getArea() << endl;
+
+
 
     return 0;
 }
