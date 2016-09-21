@@ -23,7 +23,7 @@ void setHeight(int h)
     protected:
     int width;
     int height;
-    int radius;
+
 
 
 };
@@ -54,7 +54,7 @@ public:
 
     int getArea()
     {
-        return (3.14 * radius * radius);
+        return (3.14 * width * width);
     }
 };
 int main(void)
