@@ -38,16 +38,21 @@ int main(void)
 {
 
     Triangle Tri;
+    Rectangle Rec;
+    Circle Cir;
+
+    int input;
 
     Tri.setWidth(5);
-
     Tri.setHeight(7);
     // Print the area of the object.
+
+    cout << "input legth and width of a rectangle" << endl;
 
     cout << "Total Triangle area: " << Tri.getArea() << endl;
 
 
-    cout << "Total area of shapes: " << Tri.getArea() + Circle.getArea() + Rec.getArea() << endl;
+    cout << "Total area of shapes: " << Tri.getArea() + Cir.getArea() + Rec.getArea() << endl;
 
     return 0;
 }
