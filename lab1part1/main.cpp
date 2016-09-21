@@ -72,8 +72,19 @@ int main(void)
 
     cout << "input legth and width of a rectangle" << endl;
 
-    cout << "Total Triangle area: " << Tri.getArea() << endl;
+    cin >> input;
+    Rec.setWidth(input);
+    cin >> input;
+    Rec.setHeight(input);
 
+    cout << "input radius of a circle" << endl;
+
+    cin >> input;
+    Cir.setWidth(input);
+
+    cout << "Total Triangle area: " << Tri.getArea() << endl;
+    cout << "Total Rectangle area: " << Rec.getArea() << endl;
+    cout << "Total Circle area: " << Cir.getArea() << endl;
 
     cout << "Total area of shapes: " << Tri.getArea() + Cir.getArea() + Rec.getArea() << endl;
 
