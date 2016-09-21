@@ -39,12 +39,15 @@ int main(void)
 
     Triangle Tri;
 
-     Tri.setWidth(5);
+    Tri.setWidth(5);
 
     Tri.setHeight(7);
     // Print the area of the object.
 
     cout << "Total Triangle area: " << Tri.getArea() << endl;
+
+
+    cout << "Total area of shapes: " << Tri.getArea() + Circle.getArea() + Rec.getArea() << endl;
 
     return 0;
 }
