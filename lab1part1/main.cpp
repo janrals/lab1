@@ -10,7 +10,7 @@ public:
 
     virtual int getArea() = 0;
 
-    void setWidth(int w)
+void setWidth(int w)
 {
     width = w;
 }
@@ -19,18 +19,31 @@ void setHeight(int h)
 {
         height = h;
 }
+
     protected:
     int width;
     int height;
+
+
 };
 
 class Triangle: public Shape
 {
-    public:
+public:
 
     int getArea()
     {
     return (width * height)/2;
+    }
+};
+
+class Rectangle: public Shape
+{
+public:
+
+    int getArea()
+    {
+        return (width * height);
     }
 };
 
